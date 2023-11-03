@@ -1,0 +1,43 @@
+{% extends 'employee_audit/base.html' %}
+{% load static %}
+
+{% block title %}
+    Tareas  
+{% endblock %}
+
+{% block content %}
+{% include 'includes/task_menu.html' %}
+    <main role="main" class="container">
+        <h2 style="margin: 30px 0 10px 0;">Tareas</h2>
+
+        <form method="GET">
+            <p>Ingrese el nombre de una tarea o de un empleado:</p>
+            <input type="text" name="q" placeholder="Buscar tareas" value="{{ request.GET.q }}">
+            <button type="submit" style="margin-bottom: 20px">Buscar</button>
+        </form>
+
+        {% if tareaxempleado_list %}
+            <div class="list-group">
+                {% for tareaxempleado in tareaxempleado_list %}
+                    <div class="card">
+                        <h5 class="card-header">Tarea: {{ tareaxempleado.tarea }}
+                        <br>
+                        <p style="font-size: 0.8em; color: #888; margin: 0;">
+                            <b>Empleados: </b>{{ tareaxempleado.empleado }}
+                        </p>
+                        </h5>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% else %}
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Tareas</h5>
+                    <p class="card-text">Sin tareas coincidentes, por favor, ajuste su búsqueda.</p>
+                    <a href="{% url 'home' %}" class="btn btn-primary">Inicio</a>
+                </div>
+            </div>
+        {% endif %}
+    </main>
+{% endblock content %}

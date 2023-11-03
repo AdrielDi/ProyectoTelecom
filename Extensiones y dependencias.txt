@@ -1,0 +1,7 @@
+RECActivity es el programa en C#, este es necesario para mostrar en django la aplicación en pantalla.
+Para ello necesita instalar en Visual Studio Code Community la dependencia Newtonsoft.Json con dotnet add package Newtonsoft.Json
+e iniciar el programa "seeker" 
+
+Employee Auditor es el programa en Django, este no necesita del C# para existir, asi que puede funcionar por cuenta propia.
+Necesita de las extensiones de beautifulsoup4, django-bootstrap, django-ckeditor, asgiref, django-ckeditor, django-cors-headers,
+django-environ, django-js-asset

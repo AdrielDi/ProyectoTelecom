@@ -1,0 +1,17 @@
+C:\Proyectos\RECActivity\Activity\seeker\bin\Debug\net6.0\seeker.exe
+C:\Proyectos\RECActivity\Activity\seeker\bin\Debug\net6.0\seeker.deps.json
+C:\Proyectos\RECActivity\Activity\seeker\bin\Debug\net6.0\seeker.runtimeconfig.json
+C:\Proyectos\RECActivity\Activity\seeker\bin\Debug\net6.0\seeker.dll
+C:\Proyectos\RECActivity\Activity\seeker\bin\Debug\net6.0\seeker.pdb
+C:\Proyectos\RECActivity\Activity\seeker\obj\Debug\net6.0\seeker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos\RECActivity\Activity\seeker\obj\Debug\net6.0\seeker.AssemblyInfoInputs.cache
+C:\Proyectos\RECActivity\Activity\seeker\obj\Debug\net6.0\seeker.AssemblyInfo.cs
+C:\Proyectos\RECActivity\Activity\seeker\obj\Debug\net6.0\seeker.csproj.CoreCompileInputs.cache
+C:\Proyectos\RECActivity\Activity\seeker\obj\Debug\net6.0\seeker.dll
+C:\Proyectos\RECActivity\Activity\seeker\obj\Debug\net6.0\refint\seeker.dll
+C:\Proyectos\RECActivity\Activity\seeker\obj\Debug\net6.0\seeker.pdb
+C:\Proyectos\RECActivity\Activity\seeker\obj\Debug\net6.0\seeker.genruntimeconfig.cache
+C:\Proyectos\RECActivity\Activity\seeker\obj\Debug\net6.0\ref\seeker.dll
+C:\Proyectos\RECActivity\Activity\seeker\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Proyectos\RECActivity\Activity\seeker\obj\Debug\net6.0\seeker.csproj.AssemblyReference.cache
+C:\Proyectos\RECActivity\Activity\seeker\obj\Debug\net6.0\seeker.csproj.CopyComplete

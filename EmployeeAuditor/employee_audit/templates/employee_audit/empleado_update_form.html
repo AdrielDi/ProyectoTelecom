@@ -1,0 +1,31 @@
+{% extends 'employee_audit/base.html' %}
+{% load static %}
+
+{% block title %} 
+    Modificar Empleado 
+{% endblock %}
+
+{% block  content %}
+{% include 'includes/employee_menu.html' %}
+<main role="main">
+    <div class="container">
+        <div class="row mb-5 mt-3">
+            <div class="col-md-9 mx-auto">
+                {% if '?ok' in request.GET %}
+                    <p style="color:green;">Empleado modificado correctamente
+                        <a href="{% url 'empleados' %}">
+                        Haz clic para ver el la lista de Empelados con la modificacion
+                        </a>
+                    </p>
+                {% endif %}        
+                <form action="" method="post" enctype='multipart/form-data'>{% csrf_token %}
+                    {{ form.as_p }}  
+                    <div class="text-center">
+                        <input type="submit" class="btn btn-primary btn-block" value="Modificar Empleado" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </main>
+  {%endblock%}

@@ -1,0 +1,53 @@
+/* Estilos para la barra de navegación lateral */
+.sidebar {
+    height: 100%;
+    width: 60px; /* Ancho inicial pequeño */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    transition: width 0.3s; /* Transición suave al expandir/colapsar */
+}
+
+.sidebar.expanded {
+    width: 250px; /* Ancho expandido */
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    visibility: hidden;
+}
+
+.sidebar-menu.expanded {
+    display: block; /* Mostrar enlaces cuando se expanda */
+    visibility: visible;
+}
+
+.sidebar-menu li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para el botón de expansión */
+#toggle-sidebar-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}

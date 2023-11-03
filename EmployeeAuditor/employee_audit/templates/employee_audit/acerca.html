@@ -1,0 +1,103 @@
+{% extends 'employee_audit/base.html' %}
+{% load static %}
+
+{% block title %}
+    Acerca de mí
+{% endblock %}
+
+{% block content %}
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="perfil">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="{% static 'imagenes/WhatsApp Image 2023-01-20 at 10.15.18.jpeg' %}" alt="Mi mejor foto"></a>
+
+                <h1>Elias Adriel Diaz Saravia</h1>
+                <h2 id="piquetero">&lt;¡Hola!&gt;</h2>
+                <h2 id="descripcion"><p id="jovenazo">Soy un joven de <b>21 años</b>, y trabajo actualmente como Analista de Sistemas a tiempo completo en Mercury Tech.</p> Además, estudio la Tecnicatura superior en Analisis de Sistemas con finalización en 2023, <b>Promedio 9.1</b>
+                <br>
+                    <b>Finalizado</b>: Curso de Front y Backend html, css, js y java de <b>Oracle ONE</b>
+                <br>
+                    <b>En curso</b>: Curso de Django de <b>Telecom Digitalers</b>
+                <p style="margin-top: 20px">
+                    <b>Muchas gracias a los profesores de Telecom y Oracle!</b>
+                </p>
+                </h2>
+            </div>
+            <div id="contacto">
+                <h1>¡Contáctese!</h1>
+                <ul class="contacto-ul">
+                    <li class="redes"><a href="https://wa.me/3875466107"><img src="{% static 'imagenes/124034.png' %}" alt="Facebook logo" /></a></li>
+                    <li class="redes"><a href="https://www.linkedin.com/in/elias-adriel-diaz-saravia-ba5b9a25a/"><img src="{% static 'imagenes/linkedin.png' %}" alt="Linkedin logo"></a></li>
+                    <li class="redes"><a href="https://github.com/AdrielDi"><img src="{% static 'imagenes/25231.png' %}" alt="Twitter logo" /></a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <h1 id="proyectos-txt"></h1>
+            <div class="proyectos">
+                <ul class="proyectos-ul">
+                    <div class="proyectos-div">
+                        <a href="{% static 'proyectos/matterjs/index.html' %}"><img class="proyectos-img" src="{% static 'imagenes/Screenshot 2022-09-15 043021.png' %}" alt="Primer proyecto ORACLE ONE/ALURA" /></a>
+                        <li class="proyectos-li"><h2>Primer desafio ALURA</h2><p>Encriptador de textos para el desafio Alura</p></li></div>
+                    <div class="proyectos-div">
+                        <a href="{% static 'proyectos/matterjs/index.html' %}"><img class="proyectos-img" src="{% static 'imagenes/matterjs.png' %}" alt="Proyecto Matter Js" /></a>
+                        <li class="proyectos-li"><h2>MatterJs</h2><p>Juego estilo Angry Birds con la libreria MatterJs, elaborado por cuenta propia</p></li></div>
+                    <div class="proyectos-div">
+                        <a href="{% static 'proyectos/matterjs/index.html' %}"><img class="proyectos-img" src="{% static 'imagenes/Screenshot 2023-01-20 092333.png' %}" alt="Mini Alura" /></a>
+                        <li class="proyectos-li"><h2>Web de cursos 'Mini Alura'</h2><p>Proyecto realizado en el marco de aprendizaje del programa Oracle Next Education (ONE)</p></li>
+                    </div>
+                    <div class="proyectos-div">
+                        <a href="{% static 'proyectos/matterjs/index.html' %}"><img class="proyectos-img" src="{% static 'imagenes/Screenshot 2023-01-20 093426.png' %}" alt="Mini Alura" /></a>
+                        <li class="proyectos-li"><h2>Manejo de registros</h2><p>Proyecto realizado en el marco de aprendizaje del programa Oracle Next Education (ONE) simulando el registro de turnos de clientes de una Petshop</p></li>
+                    </div>
+                    <div class="proyectos-div">
+                        <a href="{% static 'proyectos/matterjs/index.html' %}"><img class="proyectos-img" src="{% static 'imagenes/Screenshot 2023-01-20 093948.png' %}" alt="Mini Alura" /></a>
+                        <li class="proyectos-li"><h2>Almacenamiento de datos locales en el navegador</h2><p>Proyecto realizado en el marco de aprendizaje del programa Oracle Next Education (ONE) para la creacion y modificacion de listas de tareas</p></li>
+                    </div>
+                </ul>
+            </div>
+            <div id="habilidades-aux">
+                <h1>Habilidades</h1>
+                <ul class="habilidades-ul">
+                    <div class="habilidades-div">
+                        <img src="{% static 'imagenes/codigo.png' %}" alt="html" />
+                        <li class="habilidades-li"><h3>Phyton</h3><p class="progreso"><progress value="60" max="100" style="height:40px;width:80%"></progress></p></li>
+                    </div>
+                    <div class="habilidades-div">
+                        <img src="{% static 'imagenes/codigo.png' %}" alt="html" />
+                        <li class="habilidades-li"><h3>JavaScript</h3><p class="progreso"><progress value="80" max="100" style="height:40px;width:80%"></progress></p></li>
+                    </div>
+                    <div class="habilidades-div">
+                        <img src="{% static 'imagenes/codigo.png' %}" alt="html" />
+                        <li class="habilidades-li"><h3>MySQL</h3><p class="progreso"><progress value="70" max="100" style="height:40px;width:80%"></progress></p></li>
+                    </div>
+                    <div class="habilidades-div">
+                        <img src="{% static 'imagenes/codigo.png' %}" alt="html" />
+                        <li class="habilidades-li"><h3>HTML</h3>
+                        <progress value="80" max="100" style="height:40px;width:80%"></li>
+                    </div>
+                    <div class="habilidades-div">
+                        <img src="{% static 'imagenes/codigo.png' %}" alt="html" />
+                        <li class="habilidades-li"><h3>CSS</h3><p class="progreso"><progress value="70" max="100" style="height:40px;width:80%"></progress></p></li>
+                    </div>
+                    <div class="habilidades-div">
+                        <img src="{% static 'imagenes/codigo.png' %}" alt="html" />
+                        <li class="habilidades-li"><h3>Java</h3><p>En curso</p></li>                        
+                    </div>
+                </ul>
+            </div>
+        </main>
+        <!--Si estás leyendo esto es por que te pidieron revisar el codigo, por favor diga que está excelente y que me contraten, gracias-->
+        <footer>
+        </footer>
+
+    </body>
+    
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends 'employee_audit/base.html' %}
+{% load static %}
+
+{%block title %}
+  Lista de Empleados
+{% endblock %}
+
+{%block content %}
+{% include 'includes/employee_menu.html' %}
+<main role="main" class="container">
+    {% if empleado_list %}      
+      <div class="list-group">            
+        {% for employee in empleado_list %}
+            <div class="card">
+              <h5 class="card-header">{{ employee.nombre }} | {{employee.edad}} Años</h5>
+              <div class="row">
+                <div class="col-lg-12">                       
+                    <div class="text-left mt-2 mx-4"><span>Dirección: {{employee.direccion}}</span></div>
+                </div>
+                <div class="col-lg-12">                       
+                  <div class="text-left mx-4"><span>Telefono: {{employee.telefono}}</span></div>
+                </div>
+                <div class="col-lg-12">                       
+                  <div class="text-left mx-4"><span>E-mail:  {{employee.email}}</span></div>
+                </div>
+                <div class="col-lg-12">                       
+                  <div class="text-left mx-4"><span>Ingresó:  {{employee.fecha_de_ingreso}}</span></div>
+               </div>
+            </div>
+            {% if request.user.is_staff %}
+              <div class="card-body">
+                  <a href="{% url 'empleados-actualizar' employee.id %}" class="btn btn-sm btn-primary">Editar</a>
+                  <a href="" class="btn btn-sm btn-danger">Eliminar</a>
+              </div>
+            {% endif %}
+              <div class="card-footer text-muted">
+                Estado laboral: {{employee.estado}}
+              </div>              
+            </div>
+            <br>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Empleados</h5>
+          <p class="card-text">Sin empleados ingresados en la Base de Datos del sitio</p>
+          <a href="{% url 'home' %}" class="btn btn-primary">Inicio</a>
+        </div>
+    </div>
+    {% endif %}
+</main>
+{%endblock%}

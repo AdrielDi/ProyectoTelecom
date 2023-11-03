@@ -1,0 +1,29 @@
+{% extends 'employee_audit/base.html' %}
+{% load static %}
+
+{%block title %}
+    Inicio
+{% endblock %}
+
+{%block content %}
+
+<main role="main" class="container">
+
+    <div class="starter-template">
+        <h1>Sitio de control de empleados de la empresa</h1>
+        <p class="lead">
+            Este es un sitio de aprendizaje construido con Django / Python<br>
+            Dictado por @Digitalers de la carrera de Desarrollo Web con Python<br>
+            Profesor Norman Beltran<br> 
+        </p>
+        <h1> El proyecto </h1>
+        <h3 class="body">
+            Se idea una aplicación para el control de empleados, con un Activity Tracker codeado en C# para que empleadores y empleados remotos, empleadores podrán asignar tareas, enviar notificaciones y más a sus empleados, además de ver en tiempo real, por el nombre, la aplicación activa del empleado. <br>
+            Empleados podrán recibir notificaciones en tiempo real sobre correciones del trabajo y urgencias, además de tareas asignadas por su Empleador y/o Admin.     
+        </h3>
+    </div>
+
+</main>
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+
+{%endblock%}

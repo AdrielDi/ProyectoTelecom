@@ -1,0 +1,25 @@
+{% load static %}
+<script type="text/javascript" src="{% static 'ckeditor-init.js' %}"></script>
+<script type="text/javascript" src="{% static 'ckeditor/ckeditor.js' %}"></script>
+<link href="{% static 'css/custom_ckeditor.css' %}" rel="stylesheet">
+
+{% if request.user.is_staff %}
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd; margin: 0 0 30px 60px;">
+  <div class="container">
+    <span class="navbar-brand" href="#"><i>Administrar</i></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nep" aria-controls="nep" aria-expanded="false">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nep">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'empleados-crear' %}"><i>Agregar Empelado</i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'empleados' %}"><i>Listar Empleados</i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+{% endif %}

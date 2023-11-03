@@ -1,0 +1,38 @@
+{% extends 'employee_audit/base.html' %}
+{% load static %}
+
+{% block title %}
+    Notificaciones
+{% endblock %}
+
+{% block content %}
+{% include 'includes/notification_menu.html' %}
+    <main role="main" class="container">
+        <h2 style="margin: 30px 0 10px 0;">Notificaciones</h2>
+        {% if notificacion_list %}
+            <div class="list-group">
+                {% for notificacion in notificacion_list %}
+                    <div class="card">
+                        <h5 class="card-header">Enviado a {{ notificacion.empleado }} -> {{ notificacion.mensaje }}
+                          <br>
+                          <p style="font-size: 0.8em; color: #888; margin: 0;">
+                            <b>Fecha: </b>{{ notificacion.fecha_envio }}
+                          </p>
+                          <p style="font-size: 0.8em; color: #888; margin-bottom: 4px;">
+                            <b>Id: </b>{{ notificacion.id }}
+                          </p>
+                        </h5>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Notificaciones</h5>
+                    <p class="card-text">Sin mensajes ingresados en la Base de Datos del sitio, por favor, envíe una notificación a un empleado</p>
+                    <a href="{% url 'home' %}" class="btn btn-primary">Inicio</a>
+                </div>
+            </div>
+        {% endif %}
+    </main>
+{% endblock content %}

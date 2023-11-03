@@ -1,0 +1,33 @@
+{% extends 'employee_audit/base.html' %}
+{% load static %}
+
+{%block title %}
+  Proyectos
+{% endblock %}
+
+{%block content %}
+{% include 'includes/proyect_menu.html' %}
+<main role="main" class="container">
+    {% if proyecto_list %}      
+        <div class="list-group">            
+        {% for proyecto in proyecto_list %}
+            <div class="card">
+              <h3 class="card-header">{{ proyecto.nombre }} 
+                <p style="font-size: 0.8em; color: #888; margin-bottom: 4px;">
+                  <b>ID de Proyecto: #</b>{{ proyecto.id }}
+                </p>
+              </h3>
+            </div>
+        {% endfor %}
+	</div>
+    {% else %}
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h3 class="card-title">Proyectos</h3>
+          <p class="card-text">Sin proyectos ingresados en la Base de Datos del sitio</p>
+          <a href="{% url 'home' %}" class="btn btn-primary">Inicio</a>
+        </div>
+    </div>
+    {% endif %}
+</main>
+{% endblock content %}

@@ -1,0 +1,200 @@
+html{
+    height: fit-content;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(143,177,226);
+    background: radial-gradient(circle, rgba(143,177,226,0.9335084375547094) 5%, rgba(122,141,215,1) 100%);
+    min-height: 100%;
+}
+#perfil{
+    margin-top: 62px;
+}
+#perfil img{
+    display: block;
+    margin: 0 auto 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 30px;
+}
+#perfil h1{
+    font-size: 45px;
+    margin-top: 4vh;
+    text-align: center;
+    text-decoration: solid;
+    font-weight: bold;
+    font-style: italic;
+}
+#piquetero{
+    text-align: center;
+    margin-top: 2vh;
+    padding: 0 450px 0 450px;
+    font-size: 25px;
+}
+#descripcion{
+    text-align: center;
+    margin-top: 2vh;
+    padding: 0 450px 0 450px;
+}
+#contacto{
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+#contacto h1{
+    font-weight: bold;
+    font-size: 35px;
+    margin: 6vh 0 4vh 0;
+}
+.contacto-ul{
+    list-style: none;
+    margin-top: 40px;
+}
+.redes{
+    display: inline;
+    margin: 0vh 8vh 0 8vh;
+}
+.redes img{
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+}
+
+/* MAIN */
+
+main h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    margin: 12vh 0 ;
+}
+main h2{
+    font-weight: bold;
+    font-size: 35px;
+    margin: 2vh 0 ;
+}
+main h3{
+    font-weight: bold;
+    font-size: 20px;
+}
+#proyectos-txt{
+    text-decoration:line-through;
+}
+.proyectos-div{
+    background: #ACC1F2;
+    margin-bottom: 10px;
+    max-width: 70%;
+    margin-left: 15%;
+    padding-top: 4vh;
+    border-radius: 60px;
+    box-shadow: inset 5px 5px 16px 0px #cfd4d640;
+    transition: 300ms;
+}
+.proyectos-div:hover{
+        box-shadow: inset 5px 5px 16px 0px #0d111354;
+}
+.proyectos-img{
+    margin-left: 10%;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    box-shadow: 5px 5px 16px 0px #CFD4D6;
+    position: sticky;
+}
+.proyectos-img:hover{
+    border-style: double;
+    border-width: 2px;
+    border-left: none;
+    border-top: none;
+    margin-bottom: 28px;
+    margin-right: 18px;
+    box-shadow: 5px 5px 16px 0px #828b8e;
+}
+.proyectos-li{
+    padding-left: 100px;
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.habilidades-div{
+    height: 80px;
+    margin: 10px 25% 12px 25%;
+    padding: 10px 0 4px 0;
+    border-radius: 90px;
+    vertical-align: top;
+    background:#ACC1F2;
+}
+.habilidades-div img{
+    margin: 20px 0 20px 40px;
+    width: 40px;
+    height: 40px;
+    align-items: left;
+    border-radius: 10px;
+}
+.habilidades-li{
+    width: 80%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+.habilidades-p{
+    display: inline-block;
+    text-align: middle;
+}
+
+
+/*FOOTER*/
+.footer-div-img{
+    background: whitesmoke;
+    min-height: 20px;
+    max-height: 180px;
+    width: 100%;
+    margin-top: 90px;
+    margin-bottom: 0;
+    background: -o-linear-gradient(rgba(122,141,215,1), rgba(143,177,226,0.9335084375547094));
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+}
+footer img{
+    width: 100px;
+    height: 100px;
+    max-height: 100%;
+    border-radius: 80px;
+    margin: 20px 0 12px 0px ;
+}
+
+
+
+
+/*Para celulares
+Tengo que hacer mi foto de perfil mas grande
+Tengo que achicar la letra de la descripcion
+Tengo que hacer el width de la descripcion mas chico
+tengo que achicar la foto de los proyectos
+En 100% no se ve el footer*/
+
+
+
+
+
+
+
+
+
+
+
+/* SCROLLBAR */
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: #a2a2a2;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 70px;
+    background: rgb(231,214,177);
+}
